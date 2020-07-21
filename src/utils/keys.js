@@ -1,5 +1,9 @@
 const keys = [
   {
+    keyNumber: 80,
+    keySound: "pk",
+  },
+  {
     keyNumber: 65,
     keySound: "clap",
   },
