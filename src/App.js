@@ -3,7 +3,7 @@ import "./App.css";
 
 // App Comonent
 import Drumkit from "app/component/Drumkit";
-
+console.log("Test");
 function App() {
   return (
     <div className="App">
