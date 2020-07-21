@@ -18,7 +18,6 @@ function Drumkit() {
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
 
     key.classList.add("playing");
-    audio.currentTime = 0;
     audio.play();
   }
 
