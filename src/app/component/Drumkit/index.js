@@ -9,6 +9,10 @@ function Drumkit() {
   const [isPlayed, setIsPlayed] = useState(false);
 
   function playSound(e) {
+    const keyCode = keys.find((el) => {
+      return el.keyNumber === e.keyCode;
+    });
+    console.log("keyCode:", keyCode);
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if (!audio) return;
@@ -19,7 +23,6 @@ function Drumkit() {
   }
 
   function removeTransition(e) {
-    console.log("eeeeeeee", e);
     if (e.propertyName !== "transform") return;
     e.target.classList.remove("playing");
   }
@@ -43,7 +46,14 @@ function Drumkit() {
     <div className="keys">
       {keys.map((key, i) => {
         return (
-          <Key key={i} keyNumber={key.keyNumber} keySound={key.keySound} />
+          <Key
+            key={i}
+            keyNumber={key.keyNumber}
+            keySound={key.keySound}
+            onClick={(e) => {
+              playSound({ keyCode: key.keyNumber });
+            }}
+          />
         );
       })}
     </div>
