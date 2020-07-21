@@ -1,39 +1,39 @@
 const keys = [
   {
-    key: 65,
-    sound: "clap",
+    keyNumber: 65,
+    keySound: "clap",
   },
   {
-    key: 83,
-    sound: "hihat",
+    keyNumber: 83,
+    keySound: "hihat",
   },
   {
-    key: 68,
-    sound: "kick",
+    keyNumber: 68,
+    keySound: "kick",
   },
   {
-    key: 70,
-    sound: "openhat",
+    keyNumber: 70,
+    keySound: "openhat",
   },
   {
-    key: 71,
-    sound: "boom",
+    keyNumber: 71,
+    keySound: "boom",
   },
   {
-    key: 72,
-    sound: "ride",
+    keyNumber: 72,
+    keySound: "ride",
   },
   {
-    key: 74,
-    sound: "snare",
+    keyNumber: 74,
+    keySound: "snare",
   },
   {
-    key: 75,
-    sound: "tom",
+    keyNumber: 75,
+    keySound: "tom",
   },
   {
-    key: 76,
-    sound: "tink",
+    keyNumber: 76,
+    keySound: "tink",
   },
 ];
 

@@ -7,6 +7,7 @@ import Drumkit from "app/component/Drumkit";
 function App() {
   return (
     <div className="App">
+      <h1>ReactJS Drum Kit</h1>
       <Drumkit />
     </div>
   );
